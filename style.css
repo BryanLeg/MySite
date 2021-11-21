@@ -15,9 +15,23 @@
 }
 
 header {
-  background-color: #36311f;
+  background-color: var(--secondaryColor);
   color: var(--quinaryColor);
   font-family: var(--primaryFont);
+  font-weight: bolder;
+}
+
+.navLinks {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navLink {
+  margin: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.navLink:hover {
+  color: var(--quaternaryColor);
 }
