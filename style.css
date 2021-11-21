@@ -1,0 +1,23 @@
+:root {
+  --primaryColor: #ff206e;
+  --secondaryColor: #393e41;
+  --terciaryColor: #bc412b;
+  --quaternaryColor: #f2a65a;
+  --quinaryColor: #c5e7e2;
+  --primaryFont: "Shippori Antique", sans-serif;
+  --secondaryFont: "Source Sans Pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #36311f;
+  color: var(--quinaryColor);
+  font-family: var(--primaryFont);
+  display: flex;
+  justify-content: space-between;
+}
