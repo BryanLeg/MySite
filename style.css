@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: #ff206e;
+  --primaryColor: #0b5563;
   --secondaryColor: #393e41;
   --terciaryColor: #bc412b;
   --quaternaryColor: #f2a65a;
@@ -13,3 +13,109 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Banner */
+
+header {
+  background: url(./images/Computer.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main {
+  font-family: var(--secondaryFont);
+  position: absolute;
+  text-align: center;
+  left: 40%;
+  top: 30%;
+}
+
+.title {
+  font-family: var(--primaryFont);
+  text-shadow: 1px 1px 1px black;
+  color: var(--quaternaryColor);
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 1rem;
+}
+
+@keyframes slideLeft {
+  0% {
+    display: none;
+  }
+  10% {
+    transform: translate(100%);
+  }
+  50% {
+    transform: translate(-50%);
+  }
+  75% {
+    transform: translate(30%);
+  }
+}
+
+.subtitle {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: var(--quaternaryColor);
+}
+
+.picture {
+  box-shadow: 2px 2px 5px var(--secondaryColor);
+  animation: slideRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    display: none;
+  }
+  10% {
+    transform: translate(-200%);
+  }
+  50% {
+    transform: translate(50%);
+  }
+  75% {
+    transform: translate(-30%);
+  }
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20%;
+  left: 33%;
+}
+
+.btn-banner {
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  letter-spacing: 0.1rem;
+  font-family: var(--primaryFont);
+  text-decoration: none;
+  background: var(--terciaryColor);
+  color: var(--secondaryColor);
+  padding: 1rem 2rem;
+  margin: 3rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  outline: 1px solid var(--secondaryColor);
+  outline-offset: 1px;
+}
+
+.btn-banner:hover {
+  color: var(--terciaryColor);
+  background: var(--secondaryColor);
+  outline: 1px solid var(--terciaryColor);
+  outline-offset: 3px;
+}
+
+/* end Banner */
