@@ -4,7 +4,7 @@
   --terciaryColor: #bc412b;
   --quaternaryColor: #f2a65a;
   --quinaryColor: #c5e7e2;
-  --primaryFont: "Shippori Antique", sans-serif;
+  --primaryFont: "Oswald", sans-serif;
   --secondaryFont: "Source Sans Pro", sans-serif;
 }
 
@@ -12,61 +12,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Navbar */
-
-header {
-  background-color: var(--secondaryColor);
-  color: var(--quinaryColor);
-  font-family: var(--primaryFont);
-  font-weight: bolder;
-}
-
-.navLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navLink {
-  margin: 0.5rem;
-  transition: all 0.3s linear;
-}
-
-.navLink:hover {
-  color: var(--quaternaryColor);
-}
-
-/* end Navbar */
-
-/* Accueil */
-
-.home {
-  display: grid;
-  grid-area: "a b b", "a c c", "d d d";
-}
-
-.picture {
-  grid-area: a;
-}
-
-.welcome {
-  grid-area: b;
-}
-
-.names {
-  grid-area: c;
-}
-
-.dev {
-  grid-area: d;
-}
-
-.picture img {
-  border: 5px solid var(--quaternaryColor);
-}
-
-.dev {
-  background: var(--quaternaryColor);
 }
