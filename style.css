@@ -14,6 +14,8 @@
   box-sizing: border-box;
 }
 
+/* Navbar */
+
 header {
   background-color: var(--secondaryColor);
   color: var(--quinaryColor);
@@ -34,4 +36,37 @@ header {
 
 .navLink:hover {
   color: var(--quaternaryColor);
+}
+
+/* end Navbar */
+
+/* Accueil */
+
+.home {
+  display: grid;
+  grid-area: "a b b", "a c c", "d d d";
+}
+
+.picture {
+  grid-area: a;
+}
+
+.welcome {
+  grid-area: b;
+}
+
+.names {
+  grid-area: c;
+}
+
+.dev {
+  grid-area: d;
+}
+
+.picture img {
+  border: 5px solid var(--quaternaryColor);
+}
+
+.dev {
+  background: var(--quaternaryColor);
 }
