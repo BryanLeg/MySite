@@ -23,6 +23,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .main {
