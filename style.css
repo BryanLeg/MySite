@@ -26,9 +26,13 @@ header {
   margin-bottom: 2rem;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   font-family: var(--secondaryFont);
-  position: absolute;
   text-align: center;
   left: 40%;
   top: 30%;
@@ -37,7 +41,7 @@ header {
 .title {
   font-family: var(--primaryFont);
   text-shadow: 1px 1px 1px black;
-  color: var(--quaternaryColor);
+  color: var(--quinaryColor);
   animation-name: slideLeft;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -91,9 +95,8 @@ header {
 }
 
 .buttons {
-  position: absolute;
-  bottom: 20%;
-  left: 33%;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-banner {
