@@ -47,28 +47,13 @@ header {
   font-family: var(--primaryFont);
   text-shadow: 1px 1px 1px black;
   color: var(--terciaryColor);
-  animation-name: slideLeft;
+  animation-name: apparition;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   margin: 1rem;
   justify-content: center;
   font-size: 4rem;
-}
-
-@keyframes slideLeft {
-  0% {
-    display: none;
-  }
-  10% {
-    transform: translate(100%);
-  }
-  50% {
-    transform: translate(-50%);
-  }
-  75% {
-    transform: translate(30%);
-  }
 }
 
 .subtitle {
@@ -122,3 +107,5 @@ header {
 }
 
 /* end Banner */
+
+/* about me */
