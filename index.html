@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     </style>
     <title>Développeur Web - Bryan Legrain</title>
   </head>
-  <body>
+  <body class="background">
     <header>
       <!-- banner -->
 
@@ -88,7 +94,7 @@
     <!-- projects -->
 
     <section class="projects" id="projects">
-      <h1 class="title-projects">Mes projets</h1>
+      <h1 class="titleProjects">Mes projets</h1>
     </section>
 
     <!-- end projects -->
@@ -96,10 +102,61 @@
     <!-- footer -->
 
     <footer>
-      <div class="mail">
-        <a href="mailto:Brylegrain@gmail.com">Brylegrain@gmail.com</a>
+      <div>
+        <a class="email" href="mailto:Brylegrain@gmail.com"
+          >Brylegrain@gmail.com</a
+        >
       </div>
-      <div class="social"></div>
+      <div>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/bryan-legrain-937001226/"
+          ><span class="social"><i class="fab fa-linkedin"></i></span
+        ></a>
+        <a target="_blank" href="https://github.com/BryanLeg"
+          ><span class="social"> <i class="fab fa-github"></i></span
+        ></a>
+        <a target="_blank" href="./page2.html"
+          ><span class="social">CV</span></a
+        >
+      </div>
+      <button
+        onclick="topFunction()"
+        class="goTop"
+        id="goTop"
+        title="Go to top"
+      >
+        <span class="arrow"><i class="fas fa-angle-up"></i></span>
+      </button>
+    </footer>
+
+    <script>
+      var mybutton = document.getElementById("goTop");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     </footer>
 
     <!-- end footer -->
