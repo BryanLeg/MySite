@@ -6,6 +6,7 @@
   --quinaryColor: #c5e7e2;
   --primaryFont: 'Oswald', sans-serif;
   --secondaryFont: 'Roboto Mono', monospace;
+  --terciaryFont: 'Ubuntu', sans-serif;
 }
 
 * {
@@ -140,10 +141,12 @@ header {
 
 .title-aboutBe,
 .title-aboutDo {
+  font-family: var(--terciaryFont);
   color: var(--terciaryColor);
   margin-bottom: 1rem;
   margin-left: 1rem;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 
 .aboutBe h3,
@@ -176,13 +179,17 @@ span {
   background: var(--quinaryColor);
   margin: 1rem;
   border-radius: 10px;
+  height: 100vh;
   box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
 }
 
 .images {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
+  height: 100%;
 }
 
 .images > div {
@@ -196,10 +203,11 @@ span {
 
 .titleProjects {
   color: var(--terciaryColor);
-  font-family: var(--primaryFont);
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  font-family: var(--terciaryFont);
+  margin: 1rem;
+  padding: 1rem;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 
 /* end projects */
@@ -218,16 +226,18 @@ span {
   box-shadow: 5px 5px 5px black;
 }
 
-.contact > h1 {
+.titleContact {
   color: var(--terciaryColor);
-  font-family: var(--primaryFont);
+  font-family: var(--terciaryFont);
   margin-bottom: 1rem;
   margin-left: 1rem;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 
 input,
-textarea{
+textarea {
+  font-family: var(--secondaryFont);
   color: var(--terciaryColor);
   margin: 1rem;
   text-align: center;
@@ -237,6 +247,21 @@ textarea{
 
 input {
   height: 2rem;
+}
+
+.btn-contact {
+  font-family: var(--secondaryFont);
+  font-size: 1rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: var(--quinaryColor);
+  background: var(--terciaryColor);
+  border-radius: 10px;
+  border: 3px solid var(--terciaryColor);
+}
+
+.btn-contact:hover {
+  border: 3px solid var(--primaryColor);
+  cursor: pointer;
 }
 
 /* end contact */
