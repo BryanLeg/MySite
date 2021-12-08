@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+    session_start();
     if(isset($_POST['submit'])) {
         if(isset($_POST['message'])) {
             $retour = mail('brylegrain@gmail.com', 'Envoi depuis la page Contact de mon Portfolio', $_POST['message'] 'De :' . $_POST['name'], $_POST['email']);
@@ -17,7 +18,7 @@
         } else {
             echo '<p>Veuillez écrire un message</p>'
         }
-    }
+    };
     
     ?>
 </body>
