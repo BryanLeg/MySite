@@ -332,3 +332,24 @@ a {
 }
 
 /* end page 2 */
+
+/* media-query */
+
+@media (max-width: 1080px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .picture {
+    width: 150px;
+    left: 5rem;
+    top: 10rem;
+  }
+
+  .images > div > img {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+/* end media-query */
