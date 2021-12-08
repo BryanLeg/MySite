@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,7 +41,7 @@
         <div class="buttons">
           <a class="btn-banner btnBe" href="#aboutMe">A propos de moi</a>
           <a class="btn-banner btn" href="#projects">Mes projets</a>
-          <a class="btn-banner btnDo" href="#">Contact</a>
+          <a class="btn-banner btnDo" href="#contact">Contact</a>
         </div>
       </section>
       <!-- end banner -->
@@ -95,15 +95,32 @@
 
     <section class="projects" id="projects">
       <h1 class="titleProjects">Mes projets</h1>
-      <article>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <article class="images">
+        <div><img height="250px" width="350px" src="./images/WiP.png" alt="image travail en cours"></div>
+        <div><img height="250px" width="350px" src="./images/WiP.png" alt="image travail en cours"></div>
+        <div><img height="250px" width="350px" src="./images/WiP.png" alt="image travail en cours"></div>
+        <div><img height="250px" width="350px" src="./images/WiP.png" alt="image travail en cours"></div>
       </article>
     </section>
 
     <!-- end projects -->
+
+    <!-- contact -->
+        <section class="contact" id="contact">
+          <h1>Me contacter</h1>
+          <form action="mail.php" method="post">
+            <input type="text" name="name" placeholder="Entrez votre nom"
+            required>
+            <br>
+            <input type="email" name="email" placeholder="Entrez votre email" required>
+            <br>
+            <textarea name="message" cols="50" rows="10" placeholder="Entrez votre message"
+            required></textarea>
+            <br>
+            <button type="submit" name="submit">Envoyer</button>
+          </form>
+        </section>
+    <!-- end contact -->
 
     <!-- footer -->
 
