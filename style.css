@@ -129,8 +129,8 @@ header {
   font-family: var(--primaryFont);
   background: linear-gradient(
     to left,
-    var(--quinaryColor) 90%,
-    rgba(0, 0, 0, 0)
+    var(--quinaryColor) 85%,
+    rgba(0, 0, 0, 0.233)
   );
   border-radius: 10px;
   margin: 2rem;
@@ -190,17 +190,21 @@ span {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
+  margin: 3rem;
   height: 100%;
 }
 
 .images > div {
   margin: 1rem;
+  display: grid;
 }
 
 .images > div > img {
+  height: auto;
   width: 40vw;
   border-radius: 10px;
   box-shadow: 2px 2px 3px var(--secondaryColor);
+  align-self: center;
 }
 
 .images > div > img:hover {
@@ -212,10 +216,9 @@ span {
 .titleProjects {
   color: var(--terciaryColor);
   font-family: var(--terciaryFont);
-  margin: 1rem;
-  padding: 1rem;
   font-size: 2rem;
   text-transform: capitalize;
+  margin: 1.5rem 0 0 1.5rem;
 }
 
 /* end projects */
@@ -370,12 +373,39 @@ a {
     top: 10rem;
   }
 
-  .images > div > img {
-    width: 350px;
-    height: 250px;
+  .subtitle {
+    width: 600px;
   }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 812px) {
+  .background {
+    background: url(./images/Background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .images {
+    margin: 5rem;
+  }
+
+  .images > div > img {
+    height: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    width: 92vw;
+  }
+
+  .aboutBe,
+  .aboutDo {
+    background: var(--quinaryColor);
+    width: 100%;
+  }
+
+  .contact {
+    width: 92vw;
+  }
 }
 /* end media-query */
