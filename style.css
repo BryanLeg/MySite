@@ -132,7 +132,7 @@ header {
     var(--quinaryColor) 90%,
     rgba(0, 0, 0, 0)
   );
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
   height: 50vh;
   width: 50%;
@@ -177,7 +177,7 @@ span {
 
 .projects {
   background: var(--quinaryColor);
-  margin: 1rem;
+  margin: 2rem;
   border-radius: 10px;
   height: 100vh;
   box-shadow: 5px 5px 5px black;
@@ -204,6 +204,7 @@ span {
 .images > div > img:hover {
   scale: 1.1;
   cursor: pointer;
+  background: #393e41;
 }
 
 .titleProjects {
@@ -220,15 +221,21 @@ span {
 /* contact */
 
 .contact {
-  background: var(--quinaryColor);
-  width: 50%;
-  margin: 1rem;
-  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--quinaryColor);
+  width: 50%;
+  margin: 2rem;
+  padding: 3rem;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titleContact {
@@ -252,6 +259,8 @@ textarea {
 
 input {
   height: 2rem;
+  width: 50%;
+  align-self: flex-start;
 }
 
 .btn-contact {
@@ -262,6 +271,7 @@ input {
   background: var(--terciaryColor);
   border-radius: 10px;
   border: 3px solid var(--terciaryColor);
+  width: 25%;
 }
 
 .btn-contact:hover {
