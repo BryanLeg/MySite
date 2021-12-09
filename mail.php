@@ -8,14 +8,20 @@
 </head>
 <body>
     <?php
-        if(isset($_POST['message'])) {
-            $retour = mail('brylegrain@gmail.com', 'Envoi depuis la page Contact de mon Portfolio', $_POST['message'], 'From :' . $_POST['name'] . ',' $_POST['email']);
+    session_start();
+    $dest = "brylegrain@gmail.com";
+    $sujet = "Envoi depuis la page Contact de mon Portfolio";
+    $message = $_POST['message'];
+    $header =  $_POST['name'];
 
-            if ($retour) {
+        if(isset($_POST['message'])) {
+            $envoi = mail($dest, $sujet, $message, $header);
+
+            if ($envoi) {
                 echo '<p>Votre message a bien été envoyé.</p>';
-            }
             } else {
-                echo '<p>Veuillez écrire un message</p>'
+                echo '<p>Echec de ln\'envoie</p>';
+            }
         };
     ?>
 </body>
