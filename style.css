@@ -132,6 +132,7 @@ header {
     var(--quinaryColor) 90%,
     rgba(0, 0, 0, 0)
   );
+  border-radius: 10px;
   margin: 2rem;
   padding: 1rem;
   height: 50vh;
@@ -163,7 +164,7 @@ header {
   color: var(--secondaryColor);
   font-weight: 400;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 span {
@@ -197,12 +198,13 @@ span {
 }
 
 .images > div > img {
-  height: 40vh;
   width: 40vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px var(--secondaryColor);
 }
 
 .images > div > img:hover {
-  scale: 1.1;
+  scale: 1.05;
   cursor: pointer;
   background: #393e41;
 }
@@ -226,6 +228,7 @@ span {
   align-items: center;
   background: var(--quinaryColor);
   width: 50%;
+  height: 70%;
   margin: 2rem;
   padding: 3rem;
   border-radius: 10px;
@@ -236,6 +239,8 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .titleContact {
@@ -251,14 +256,19 @@ input,
 textarea {
   font-family: var(--secondaryFont);
   color: var(--terciaryColor);
-  margin: 1rem;
   text-align: center;
   border-radius: 5px;
   border: 2px solid var(--primaryColor);
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
 }
 
 input {
-  height: 2rem;
+  height: 3rem;
   width: 50%;
   align-self: flex-start;
 }
@@ -271,7 +281,6 @@ input {
   background: var(--terciaryColor);
   border-radius: 10px;
   border: 3px solid var(--terciaryColor);
-  width: 25%;
 }
 
 .btn-contact:hover {
@@ -367,4 +376,6 @@ a {
   }
 }
 
+@media (max-width: 1010px) {
+}
 /* end media-query */
