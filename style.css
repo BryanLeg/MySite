@@ -6,7 +6,7 @@
   --quinaryColor: #c5e7e2;
   --primaryFont: 'Oswald', sans-serif;
   --secondaryFont: 'Roboto Mono', monospace;
-  --terciaryFont: 'Ubuntu', sans-serif;
+  --terciaryFont: 'PT Serif', serif;
 }
 
 * {
@@ -83,10 +83,19 @@ header {
 }
 
 .picture {
+  width: 200px;
   box-shadow: 3px 3px 5px black;
   position: absolute;
   left: 5rem;
   top: 8rem;
+}
+
+.buttons {
+  width: 40%;
+}
+
+a {
+  width: 100%;
 }
 
 .btn-banner {
@@ -142,10 +151,11 @@ header {
 
 .title-aboutBe,
 .title-aboutDo {
+  letter-spacing: 0.1rem;
   font-family: var(--terciaryFont);
   color: var(--terciaryColor);
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   font-size: 2rem;
   text-transform: capitalize;
 }
@@ -233,7 +243,7 @@ span {
   width: 50%;
   height: 70%;
   margin: 2rem;
-  padding: 3rem;
+  padding: 1rem 2rem 2rem 2rem;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
 }
@@ -259,7 +269,6 @@ input,
 textarea {
   font-family: var(--secondaryFont);
   color: var(--terciaryColor);
-  text-align: center;
   border-radius: 5px;
   border: 2px solid var(--primaryColor);
   margin-bottom: 0.5rem;
@@ -271,6 +280,7 @@ textarea {
 }
 
 input {
+  text-align: center;
   height: 3rem;
   width: 50%;
   align-self: flex-start;
@@ -404,8 +414,127 @@ a {
     width: 100%;
   }
 
+  .contact,
+  .projects {
+    width: 92%;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .picture {
+    width: 130px;
+    left: 5rem;
+    top: 10rem;
+  }
+
+  .subtitle {
+    width: 450px;
+    font-size: 1rem;
+  }
+
+  .spanTitle {
+    font-size: 3rem;
+  }
+
+  .btn-banner {
+    font-size: 1rem;
+  }
+
+  .images {
+    grid-template-columns: auto;
+    margin: 1rem;
+  }
+
+  .images > div > img {
+    width: 100%;
+    height: 18vh;
+  }
+
+  .projects {
+    width: 92%;
+  }
+}
+
+@media (max-width: 480px) {
+  .spanTitle {
+    font-size: 2rem;
+    color: var(--quinaryColor);
+  }
+
+  .subtitle {
+    width: 420px;
+    font-size: 0.9rem;
+  }
+
+  .picture {
+    left: 4rem;
+    top: 9rem;
+  }
+
+  .projects,
+  .contact,
+  .aboutBe,
+  .aboutDo {
+    margin: 1rem;
+  }
+
   .contact {
-    width: 92vw;
+    height: 60%;
+  }
+
+  .arrow {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .subtitle {
+    font-weight: 400;
+    width: 350px;
+    font-size: 0.85rem;
+  }
+
+  .picture {
+    left: 3rem;
+    top: 9rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .subtitle {
+    font-weight: 400;
+    width: 300px;
+    font-size: 0.7rem;
+  }
+
+  .picture {
+    width: 110px;
+    left: 2.8rem;
+  }
+
+  .btn-banner {
+    padding: 1rem 10rem 1rem 3rem;
+  }
+
+  .aboutBe h3,
+  .aboutDo h3,
+  .aboutBe p,
+  .aboutDo p {
+    font-size: 0.9rem;
+  }
+
+  .title-aboutBe,
+  .title-aboutDo {
+    font-size: 1.8rem;
   }
 }
 /* end media-query */
