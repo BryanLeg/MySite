@@ -200,7 +200,7 @@ span {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
-  margin: 3rem;
+  margin: 0rem;
   height: 100%;
 }
 
@@ -372,6 +372,8 @@ a {
 
 /* media-query */
 
+/* horizontal */
+
 @media (max-width: 1080px) {
   .title {
     font-size: 2rem;
@@ -386,21 +388,17 @@ a {
   .subtitle {
     width: 600px;
   }
+
+  .images > div > img {
+    height: 80%;
+  }
 }
 
-@media (max-width: 812px) {
+@media (max-width: 816px) {
   .background {
     background: url(./images/Background.jpg);
     background-size: cover;
     background-attachment: fixed;
-  }
-
-  .images {
-    margin: 5rem;
-  }
-
-  .images > div > img {
-    height: 100%;
   }
 
   .about {
@@ -537,4 +535,72 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/*  vertical  */
+
+@media (max-height: 635px) {
+  .aboutBe h3,
+  .aboutDo h3,
+  .aboutBe p,
+  .aboutDo p {
+    font-size: 0.9rem;
+  }
+
+  .aboutBe p,
+  .aboutDo p {
+    margin-bottom: 1rem;
+  }
+
+  .title-aboutBe,
+  .title-aboutDo {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}
+
+@media (max-height: 580px) {
+  .aboutDo h3,
+  .aboutDo p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 540px) {
+  .aboutDo h3,
+  .aboutDo p {
+    font-size: 0.7rem;
+  }
+
+  .aboutBe p,
+  .aboutDo p {
+    margin-bottom: 0.9rem;
+  }
+}
+
+@media (max-height: 410px) {
+  .aboutBe p,
+  .aboutDo p {
+    margin-bottom: 0.5rem;
+  }
+
+  .title-aboutBe,
+  .title-aboutDo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-height: 410px) {
+  .aboutBe p,
+  .aboutDo p {
+    margin-bottom: 0.3rem;
+  }
+}
+
 /* end media-query */
