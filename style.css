@@ -372,7 +372,7 @@ a {
 
 /* media-query */
 
-/* horizontal */
+/* -- horizontal --*/
 
 @media screen and (max-width: 1080px) {
   .title {
@@ -530,7 +530,12 @@ a {
   }
 }
 
-/*  vertical  */
+@media screen and (max-width: 320px) {
+  .contact {
+    height: 50vh;
+  }
+}
+/* -- vertical -- */
 
 @media screen and (max-height: 635px) {
   .aboutBe h3,
@@ -550,12 +555,6 @@ a {
     font-size: 1.7rem;
     margin-bottom: 0.7rem;
   }
-
-  .images {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-  }
 }
 
 @media screen and (max-height: 580px) {
@@ -574,6 +573,10 @@ a {
   .aboutBe p,
   .aboutDo p {
     margin-bottom: 0.9rem;
+  }
+
+  .images > div > img {
+    height: 70%;
   }
 }
 
