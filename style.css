@@ -15,11 +15,46 @@
   box-sizing: border-box;
 }
 
+/* navbar */
+
+.navbar {
+  height: 3rem;
+  background-color: var(--primaryColor);
+  border-bottom: 7px solid var(--secondaryColor);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navList {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnNav {
+  color: var(--terciaryColor);
+  font-family: var(--primaryFont);
+  text-transform: capitalize;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+  z-index: -999;
+}
+
+/* end navbar */
+
 /* banner */
 
 header {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .banner {
@@ -107,7 +142,7 @@ header {
 .aboutDo {
   font-family: var(--primaryFont);
   background: var(--terciaryColor);
-  margin: 2rem;
+  margin: 3rem 2rem;
   padding: 1rem;
   box-shadow: 5px 5px black;
 }
