@@ -1,5 +1,5 @@
 :root {
-  --primaryColor: #7a152c;
+  --primaryColor: #790000;
   --secondaryColor: #0a0a0a;
   --terciaryColor: #dad6d6;
   --quaternaryColor: #f42c04;
@@ -14,6 +14,243 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* banner */
+
+header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main {
+  font-family: var(--primaryFont);
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  font-family: var(--secondaryFont);
+  text-shadow: 1px 1px 5px var(--quinaryColor);
+  color: var(--secondaryColor);
+  /* animation-name: apparition;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out; */
+  margin-bottom: 2rem;
+  justify-content: center;
+  font-size: 2rem;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.spanTitle {
+  font-size: 2.5rem;
+  color: var(--secondaryColor);
+  text-shadow: 1px 1px 5px var(--quinaryColor);
+}
+
+.subtitle {
+  display: flex;
+  padding: 1.5rem 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--primaryColor);
+  justify-content: end;
+  margin: 1rem;
+  box-shadow: 10px 10px black;
+}
+
+.picture {
+  width: 120px;
+  box-shadow: 5px 5px black;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-banner {
+  letter-spacing: 0.1rem;
+  font-family: var(--primaryFont);
+  text-decoration: none;
+  background: var(--quinaryColor);
+  color: var(--secondaryColor);
+  width: 270px;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.btn-banner:hover {
+  color: var(--quinaryColor);
+  background: var(--secondaryColor);
+  box-shadow: 5px 5px 10px var(--quinaryColor);
+}
+
+/* end banner */
+
+/* about me */
+
+.aboutBe,
+.aboutDo {
+  font-family: var(--primaryFont);
+  background: var(--terciaryColor);
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: 5px 5px black;
+}
+
+.title-aboutBe,
+.title-aboutDo {
+  letter-spacing: 0.1rem;
+  font-family: var(--terciaryFont);
+  color: var(--secondaryColor);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.aboutBe h3,
+.aboutDo h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+.aboutBe p,
+.aboutDo p {
+  font-family: var(--primaryFont);
+  margin-left: 1rem;
+  color: var(--secondaryColor);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+
+/* end aboutme */
+
+.projects {
+  background: var(--terciaryColor);
+  margin: 2rem;
+  box-shadow: 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnProject {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.btnProject:hover {
+  color: var(--quaternaryColor);
+  scale: 1.1;
+}
+
+.imgProject {
+  width: 250px;
+}
+
+.buttonsProject {
+  display: flex;
+  justify-content: space-around;
+}
+
+.titleProjects {
+  color: var(--secondaryColor);
+  font-family: var(--terciaryFont);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+/* end projects */
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--terciaryColor);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px var(--secondaryColor);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleContact {
+  color: var(--primaryColor);
+  font-family: var(--terciaryFont);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+input,
+textarea {
+  font-family: var(--secondaryFont);
+  color: var(--secondaryColor);
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+textarea {
+  height: 150px;
+}
+
+input {
+  height: 3rem;
+  align-self: flex-start;
+}
+
+.btn-contact {
+  font-family: var(--secondaryFont);
+  font-size: 1rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: var(--terciaryColor);
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-contact:hover {
+  color: var(--primaryColor);
+  background-color: var(--terciaryColor);
+  cursor: pointer;
+}
+
+/* end contact */
 
 /* footer */
 
@@ -46,8 +283,8 @@ a {
 }
 
 .arrow {
-  font-size: 8rem;
-  color: var(--terciaryColor);
+  font-size: 5rem;
+  color: var(--quaternaryColor);
 }
 
 .goTop {
