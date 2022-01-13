@@ -15,47 +15,7 @@
   box-sizing: border-box;
 }
 
-/* navbar */
-
-.navbar {
-  height: 3rem;
-  background-color: var(--primaryColor);
-  border-bottom: 7px solid var(--secondaryColor);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-.navList {
-  height: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.btnNav {
-  color: var(--terciaryColor);
-  font-family: var(--primaryFont);
-  text-transform: capitalize;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.hidden {
-  display: none;
-  z-index: -999;
-}
-
-/* end navbar */
-
 /* banner */
-
-header {
-  position: relative;
-  margin: 2rem 0;
-}
 
 .banner {
   display: flex;
@@ -73,7 +33,6 @@ header {
 .title {
   display: flex;
   font-family: var(--secondaryFont);
-  text-shadow: 1px 1px 5px var(--quinaryColor);
   color: var(--secondaryColor);
   margin-bottom: 2rem;
   justify-content: center;
@@ -85,7 +44,6 @@ header {
 .spanTitle {
   font-size: 2.5rem;
   color: var(--secondaryColor);
-  text-shadow: 1px 1px 5px var(--quinaryColor);
 }
 
 .subtitle {
@@ -139,7 +97,7 @@ header {
   font-family: var(--primaryFont);
   background: var(--terciaryColor);
   margin: 2rem;
-  padding: 0 1rem;
+  padding: 1rem;
   box-shadow: 5px 5px black;
 }
 
@@ -254,6 +212,7 @@ textarea {
   border: none;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+  box-shadow: 3px 3px var(--secondaryColor);
 }
 
 textarea {
@@ -273,12 +232,14 @@ input {
   background-color: var(--primaryColor);
   border: none;
   border-radius: 10px;
+  font-weight: bolder;
 }
 
 .btn-contact:hover {
-  color: var(--primaryColor);
-  background-color: var(--terciaryColor);
-  border: 1px solid var(--primaryColor);
+  color: var(--terciaryColor);
+  background-color: var(--primaryColor);
+  outline: 2.5px solid var(--secondaryColor);
+  outline-offset: 0px;
   cursor: pointer;
 }
 
