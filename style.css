@@ -28,6 +28,9 @@
   text-align: center;
   margin-top: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -48,7 +51,8 @@
 
 .subtitle {
   display: flex;
-  padding: 1.5rem 1.1rem;
+  width: 320px;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   background: var(--primaryColor);
@@ -302,3 +306,22 @@ a {
   }
 }
 /* end footer */
+
+/* media queries */
+
+@media (min-width: 768px) {
+  .subtitle {
+    width: 500px;
+    padding: 1rem 1rem;
+  }
+
+  .imgProject {
+    width: 600px;
+  }
+
+  .picture {
+    width: 150px;
+  }
+}
+
+/* end media queries */
