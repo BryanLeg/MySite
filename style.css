@@ -149,6 +149,32 @@ span {
   align-items: center;
 }
 
+.titleProjects {
+  color: var(--secondaryColor);
+  font-family: var(--terciaryFont);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+}
+
+.imgProject {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  margin: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: var(--terciaryFont);
+  color: var(--primaryColor);
+}
+
+.buttonsProject {
+  display: flex;
+  justify-content: space-around;
+}
+
 .btnProject {
   background: none;
   border: none;
@@ -159,24 +185,6 @@ span {
 .btnProject:hover {
   color: var(--quaternaryColor);
   scale: 1.1;
-}
-
-.imgProject {
-  width: 250px;
-  border-radius: 10px;
-}
-
-.buttonsProject {
-  display: flex;
-  justify-content: space-around;
-}
-
-.titleProjects {
-  color: var(--secondaryColor);
-  font-family: var(--terciaryFont);
-  font-size: 1.4rem;
-  text-transform: capitalize;
-  margin: 1rem 0;
 }
 
 /* end projects */
