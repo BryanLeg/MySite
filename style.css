@@ -149,17 +149,19 @@ span {
   align-items: center;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .titleProjects {
   color: var(--secondaryColor);
   font-family: var(--terciaryFont);
   font-size: 1.4rem;
   text-transform: capitalize;
   margin: 1.5rem 0;
-}
-
-.imgProject {
-  width: 250px;
-  border-radius: 10px;
 }
 
 .projectTitle {
@@ -170,7 +172,23 @@ span {
   color: var(--primaryColor);
 }
 
+.imgProject {
+  width: 250px;
+  border-radius: 10px;
+  border: 10px solid white;
+}
+
+.projectInfos {
+  font-family: var(--terciaryFont);
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+}
+
 .buttonsProject {
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }
@@ -178,12 +196,12 @@ span {
 .btnProject {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0.5rem;
 }
 
 .btnProject:hover {
-  color: var(--quaternaryColor);
+  color: var(--primaryColor);
   scale: 1.1;
 }
 
@@ -280,6 +298,11 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+.curriculum {
+  height: 100vh;
+  width: 100%;
 }
 
 .social {

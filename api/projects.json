@@ -3,18 +3,21 @@
     "name": "Test API Pagination",
     "id": 0,
     "image": "../images/Image API Pagination.jpg",
-    "url": "https://github.com/BryanLeg/pagination"
+    "url": "https://github.com/BryanLeg/pagination",
+    "infos": "Exercice d'utilisation d'une API en JavaScript. Affiche le profil des 100 premiers contacts d'un compte GitHub"
   },
   {
     "name": "Test API CocktailsList",
     "id": 1,
     "image": "../images/Image API CocktailsList.jpg",
-    "url": "https://github.com/BryanLeg/CocktailsList"
+    "url": "https://github.com/BryanLeg/CocktailsList",
+    "infos": "Exercice d'utilisation d'une API en JavaScript. Affichage d'une liste de cocktail avec fonction de recherche par inclusion du caractére"
   },
   {
     "name": "ToDoList",
     "id": 2,
     "image": "../images/Image ToDoList.jpg",
-    "url": "https://github.com/BryanLeg/ToDoList"
+    "url": "https://github.com/BryanLeg/ToDoList",
+    "infos": "Exercice de création d'une ToDoList en JavaScript avec sauvegarde des tâches en localStorage"
   }
 ]
