@@ -154,6 +154,7 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .titleProjects {
@@ -196,8 +197,8 @@ span {
 .btnProject {
   background: none;
   border: none;
-  font-size: 3rem;
-  margin: 0.5rem;
+  font-size: 4rem;
+  margin: 2rem;
 }
 
 .btnProject:hover {

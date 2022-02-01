@@ -11,14 +11,24 @@ const showProjects = async (index) => {
 window.addEventListener("DOMcontentLoaded", showProjects(0));
 
 
-
 const btns = document.querySelectorAll('.btnProject');
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        console.log(e.currentTarget.parentElement.previousElementSibling.f);
-        const id = parseInt(e.currentTarget.parentElement.previousElementSibling.firstChild.nextElementSibling.dataset.id);
-        e.currentTarget.classList.contains('btnNext') ? id == 2 ? showProjects(0) : showProjects(id + 1) : "";
-        e.currentTarget.classList.contains('btnPrev') ? id == 0 ? showProjects(2) : showProjects(id - 1) : "";
+        if (e.currentTarget.classList.contains('btnNext')) {
+            const idNext = parseInt(e.currentTarget.previousElementSibling.firstChild.nextElementSibling.dataset.id);
 
+            if (idNext === 3) {
+                showProjects(0)
+            } else {
+                showProjects(idNext + 1)
+            }
+        } else if (e.currentTarget.classList.contains('btnPrev')) {
+            const idPrev = parseInt(e.currentTarget.nextElementSibling.firstChild.nextElementSibling.dataset.id);
+            if (idPrev == 0) {
+                showProjects(3)
+            } else {
+                showProjects(idPrev - 1)
+            }
+        }
     })
 })
