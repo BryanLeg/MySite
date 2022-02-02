@@ -38,7 +38,7 @@
     "name": "Test API Random-User",
     "id": 5,
     "image": "../images/Image API RandomUser.jpg",
-    "url": "https://bryanleg-randomuser.netlify.app/",
+    "url": "https://bryanleg-slider.netlify.app/",
     "infos": "Exercice d'utilisation d'une API"
   }
 ]
