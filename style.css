@@ -147,7 +147,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 1vh;
+  height: 100%;
 }
 
 .gallery {
@@ -175,6 +175,7 @@ span {
 }
 
 .imgProject {
+  height: 200px;
   width: 250px;
   border-radius: 10px;
   border: 10px solid white;
@@ -183,7 +184,7 @@ span {
 .projectInfos {
   font-family: var(--terciaryFont);
   margin: 1rem;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: center;
   width: 75%;
@@ -350,7 +351,12 @@ a {
   }
 
   .imgProject {
-    width: 600px;
+    height: 450px;
+    width: 500px;
+  }
+
+  .projectInfos {
+    font-size: 0.9rem;
   }
 
   .picture {
@@ -388,7 +394,12 @@ a {
   }
 
   .imgProject {
+    height: 650px;
     width: 800px;
+  }
+
+  .projectInfos {
+    font-size: 1.1rem;
   }
 
   .contact {
