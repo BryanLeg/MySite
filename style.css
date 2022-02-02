@@ -163,7 +163,7 @@ span {
   font-family: var(--terciaryFont);
   font-size: 1.4rem;
   text-transform: capitalize;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 
 .projectTitle {
