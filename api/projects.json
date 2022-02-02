@@ -24,7 +24,7 @@
     "name": "Test API React Menu",
     "id": 3,
     "image": "../images/Image API React Menu.jpg",
-    "url": "https://bryanleg-menuapi.netlify.app/",
+    "url": "https://github.com/BryanLeg/Menu",
     "infos": "Exercice d'utilisation d'une API avec ReactJS"
   }
 ]
