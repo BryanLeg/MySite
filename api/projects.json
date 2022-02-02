@@ -26,5 +26,19 @@
     "image": "../images/Image API React Menu.jpg",
     "url": "https://github.com/BryanLeg/Menu",
     "infos": "Exercice d'utilisation d'une API avec ReactJS"
+  },
+  {
+    "name": "Test API React Slider",
+    "id": 4,
+    "image": "../images/Image API Slider.jpg",
+    "url": "https://github.com/BryanLeg/slider",
+    "infos": "Exercice d'utilisation d'une API avec ReactJS"
+  },
+  {
+    "name": "Test API Random-User",
+    "id": 5,
+    "image": "../images/Image API RandomUser.jpg",
+    "url": "https://bryanleg-randomuser.netlify.app/",
+    "infos": "Exercice d'utilisation d'une API"
   }
 ]
