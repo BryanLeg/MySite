@@ -4,41 +4,41 @@
     "id": 0,
     "image": "../images/Image API Pagination.jpg",
     "url": "https://github.com/BryanLeg/pagination",
-    "infos": "Exercice d'utilisation d'une API en JavaScript. Affiche le profil des 100 premiers contacts d'un profil GitHub"
+    "infos": "Exercice d'utilisation d'une API en JavaScript. Affiche le profil des 100 premiers contacts d'un profil GitHub et pagination."
   },
   {
     "name": "Test API CocktailsList",
     "id": 1,
     "image": "../images/Image API CocktailsList.jpg",
     "url": "https://github.com/BryanLeg/CocktailsList",
-    "infos": "Exercice d'utilisation d'une API en JavaScript. Affichage d'une liste de cocktail avec fonction de recherche par caractére"
-  },
-  {
-    "name": "ToDoList React",
-    "id": 2,
-    "image": "../images/Image ToDoList.jpg",
-    "url": "https://github.com/BryanLeg/todolist-react",
-    "infos": "Exercice de création d'une ToDoList en JavaScript avec sauvegarde des tâches en localStorage"
-  },
-  {
-    "name": "Test API React Menu",
-    "id": 3,
-    "image": "../images/Image API React Menu.jpg",
-    "url": "https://github.com/BryanLeg/Menu",
-    "infos": "Exercice d'utilisation d'une API avec ReactJS"
-  },
-  {
-    "name": "Test API React Slider",
-    "id": 4,
-    "image": "../images/Image API Slider.jpg",
-    "url": "https://github.com/BryanLeg/slider",
-    "infos": "Exercice d'utilisation d'une API avec ReactJS"
+    "infos": "Exercice d'utilisation d'une API en JavaScript. Affichage d'une liste de cocktail avec fonction de recherche par caractére."
   },
   {
     "name": "Test API Random-User",
-    "id": 5,
+    "id": 2,
     "image": "../images/Image API RandomUser.jpg",
     "url": "https://github.com/BryanLeg/Random-User",
-    "infos": "Exercice d'utilisation d'une API"
+    "infos": "Exercice d'utilisation d'une API, affichage des informations d'un utilisateur au hasard."
+  },
+  {
+    "name": "ToDoList React",
+    "id": 3,
+    "image": "../images/Image ToDoList.jpg",
+    "url": "https://github.com/BryanLeg/todolist-react",
+    "infos": "Exercice de création d'une ToDoList en JavaScript avec ReactJS, sauvegarde des tâches en localStorage."
+  },
+  {
+    "name": "Menu React",
+    "id": 4,
+    "image": "../images/Image API React Menu.jpg",
+    "url": "https://github.com/BryanLeg/Menu",
+    "infos": "Exercice d'utilisation de ReactJS. Affichage et filtrage des plats depuis un menu."
+  },
+  {
+    "name": "Slider React",
+    "id": 5,
+    "image": "../images/Image API Slider.jpg",
+    "url": "https://github.com/BryanLeg/slider",
+    "infos": "Exercice d'utilisation de ReactJS. Affichage de profils d'utilisateurs dans un carrousel avec défilement automatique."
   }
 ]
