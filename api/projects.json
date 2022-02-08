@@ -14,10 +14,10 @@
     "infos": "Exercice d'utilisation d'une API en JavaScript. Affichage d'une liste de cocktail avec fonction de recherche par caractére"
   },
   {
-    "name": "ToDoList",
+    "name": "ToDoList React",
     "id": 2,
     "image": "../images/Image ToDoList.jpg",
-    "url": "https://github.com/BryanLeg/ToDoList",
+    "url": "https://github.com/BryanLeg/todolist-react",
     "infos": "Exercice de création d'une ToDoList en JavaScript avec sauvegarde des tâches en localStorage"
   },
   {
