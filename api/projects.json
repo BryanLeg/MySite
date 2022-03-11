@@ -7,18 +7,18 @@
     "infos": "Exercice d'utilisation d'une API en JavaScript. Affiche le profil des 100 premiers contacts d'un profil GitHub et pagination."
   },
   {
-    "name": "Test API CocktailsList",
-    "id": 1,
-    "image": "../images/Image API CocktailsList.jpg",
-    "url": "https://github.com/BryanLeg/CocktailsList",
-    "infos": "Exercice d'utilisation d'une API en JavaScript. Affichage d'une liste de cocktail avec fonction de recherche par caractére."
-  },
-  {
     "name": "Test API Random-User",
-    "id": 2,
+    "id": 1,
     "image": "../images/Image API RandomUser.jpg",
     "url": "https://github.com/BryanLeg/Random-User",
     "infos": "Exercice d'utilisation d'une API, affichage des informations d'un utilisateur au hasard."
+  },
+  {
+    "name": "Test API CocktailsList React",
+    "id": 2,
+    "image": "../images/Image API CocktailsList.jpg",
+    "url": "https://github.com/BryanLeg/CocktailsAPI-React",
+    "infos": "Exercice d'utilisation d'une API en JavaScript avec React. Affichage d'une liste de cocktail avec fonction de recherche par caractére."
   },
   {
     "name": "ToDoList React",
