@@ -16,7 +16,7 @@
   {
     "name": "Test API CocktailsList React",
     "id": 2,
-    "image": "../images/Image API CocktailsList React",
+    "image": "../images/Image API CocktailsList React.jpg",
     "url": "https://github.com/BryanLeg/CocktailsAPI-React",
     "infos": "Exercice d'utilisation d'une API en JavaScript avec React. Affichage d'une liste de cocktail avec fonction de recherche par caractére."
   },
